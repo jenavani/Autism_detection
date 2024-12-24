@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autism prediction</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 form-div">
+                    <form action="/result" method="post">
+                        <h3 class="text-center">Autism prediction</h3>
+                        <div class="form-group">
+                            <label for="a1_score">A1 Score</label>
+                            <select name="a1_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a2_score">A2 Score</label>
+                            <select name="a2_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a3_score">A3 Score</label>
+                            <select name="a3_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a4_score">A4 Score</label>
+                            <select name="a4_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a5_score">A5 Score</label>
+                            <select name="a5_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a6_score">A6 Score</label>
+                            <select name="a6_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a7_score">A7 Score</label>
+                            <select name="a7_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a8_score">A8 Score</label>
+                            <select name="a8_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a9_score">A9 Score</label>
+                            <select name="a9_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="a10_score">A10 Score</label>
+                            <select name="a10_score" class="form-control form-control-lg">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" name="age" class="form-control form-control-lg">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select name="gender" class="form-control form-control-lg">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="jaundice">Jaundice</label>
+                            <select name="jaundice" class="form-control form-control-lg">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="autism_for_immediate_family_members">Autism for immediate family members</label>
+                            <select name="autism_for_immediate_family_members" class="form-control form-control-lg">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Country">Country</label>
+                            <input type="text" name="Country" class="form-control form-control-lg">
+                        </div>
+                        <div class="form-group">
+                            <label for="used_app_before_for_test">Used app before for test</label>
+                            <select name="used_app_before_for_test" class="form-control form-control-lg">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="result">Result</label>
+                            <input type="text"  name="result" class="form-control form-control-lg">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="Predict" class="btn btn-primary btn-block btn-lg">Predict</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

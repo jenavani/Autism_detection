@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spam Email Prediction Result</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apple-website-styles@2.0.1/dist/apple-website-styles.min.css">
+  <style>
+    body {
+      background-image: url(images.jpeg);
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #5e2f17;
+      color: #fff;
+    }
+    .hero {
+      padding: 4rem 0;
+    }
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .result {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .apple-bar__item svg {
+      fill: #fff;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      background-color: #0070c9;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.25rem;
+    }
+    .btn:hover {
+      background-color: #005aa7;
+    }
+    
+  </style>
+</head>
+    <body>
+        <nav class="apple-bar apple-bar--fixed">
+            <a href="{{ url_for('index') }}" class="apple-bar__item">
+              <svg class="apple-icon" data-apple-icon="home"></svg>
+            </a>
+          </nav>
+        
+          <section class="hero">
+            <div class="container">
+              <h1 class="title">Autism Result</h1>
+              <h1 class="result">Your result is {{ prediction }}.</h1>
+            </div>
+            </section>
+    </body>
+</html>
+
