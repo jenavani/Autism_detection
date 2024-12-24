@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spam Email Prediction Result</title>
+  <title>Autism Prediction Result</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apple-website-styles@2.0.1/dist/apple-website-styles.min.css">
   <style>
     body {
@@ -47,22 +47,19 @@
     .btn:hover {
       background-color: #005aa7;
     }
-    
   </style>
 </head>
-    <body>
-        <nav class="apple-bar apple-bar--fixed">
-            <a href="{{ url_for('index') }}" class="apple-bar__item">
-              <svg class="apple-icon" data-apple-icon="home"></svg>
-            </a>
-          </nav>
-        
-          <section class="hero">
-            <div class="container">
-              <h1 class="title">Autism Result</h1>
-              <h1 class="result">Your result is {{ prediction }}.</h1>
-            </div>
-            </section>
-    </body>
+<body>
+  <nav class="apple-bar apple-bar--fixed">
+    <a href="{{ url_for('index') }}" class="apple-bar__item">
+      <svg class="apple-icon" data-apple-icon="home"></svg>
+    </a>
+  </nav>
+  <section class="hero">
+    <div class="container">
+      <h1 class="title">Autism Result</h1>
+      <h1 class="result">Your result is {{ prediction }}.</h1>
+    </div>
+  </section>
+</body>
 </html>
-
